@@ -10,9 +10,9 @@ class Slot{
     bool availability;
     int slot_no;
     int student_booked;
-    static int count; // Unlike in badminton, 10 seats are available in each slot in Gym
+    static int count; // Unlike in badminton, 3 seats are available in each slot in Gym
     Slot(bool value, int no): availability(value), slot_no(no){
-        if(count>10) availability = false; // This is only for Gym. Doesn't affect badminton since count in badminton is always 0
+        if(count>3) availability = false; // This is only for Gym. Doesn't affect badminton since count in badminton is always 0
     }
     void book_Gym(int rollno){
         count++;
@@ -100,6 +100,13 @@ int main(){
         int temp = 0;
         cout<<"Enter your roll number:"<<endl;
         cin>>rollno;
+        // Check if input is a valid integer
+        while (cin.fail()) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid input. Please enter an integer: "<<endl;
+            cin >> rollno;
+        }
         string sport;
         cout<<"Select the sport facility:"<<endl<<"Gym"<<"  "<<"Badminton"<<"   "<<"None(Check booking history)"<<endl;
         cin>>sport;
@@ -135,7 +142,7 @@ int main(){
                 }
                 else if(!gym.halfyearly_slots[slot_number-1].availability) cout<<"This slot is already full"<<endl;
             }
-            else cout<<"Invalid";
+            else cout<<"Invalid"<<endl;
         }
 
         else if(to_upper(sport) == "BADMINTON"){
