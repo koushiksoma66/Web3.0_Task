@@ -35,4 +35,9 @@ Booking Gym has slighty different rules since, 3 students can book the same slot
 
 And then the booking process is same as that in badminton except the slot is available until it is booked by three students. It is done by using a static variable in the Slot class which increases by 1 after each gym slot booking and once it reaches 3 the availablity of the slot is removed. After a slot being booked by 3 students the availblity of the slot disappears and cannot be booked further.
 
+#Setup commands to run locally
+git clone https://github.com/koushiksomaa66/Web3.0_Task.git <br>
+cd Web3.0_Task <br>
+g++ -o main main.cpp <br>
+./main <br>
 
