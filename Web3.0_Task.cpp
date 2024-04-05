@@ -57,6 +57,7 @@ class Gym{
         cout<<"Gym booking Rules:"<<endl;
         cout<<"Monthly slot booking starts only 10 days before the month start"<<endl;
         cout<<"Half-Yearly slot booking closes 10 days before a month start"<<endl;
+        cout<<"3 seats are available in Gym in each slot"<<endl;
     }
 
 };
@@ -81,14 +82,13 @@ class Student_Booking_history{
     public:
     bool flag = true;
     void display_history(int rollno, vector <Slot>& slots,int n){
-        cout<<"Booking History:"<<endl;
         for(int i = 0; i<n; i++){
             if(slots[i].student_booked == rollno){
                 cout<<slots[i].slot_time<<endl;
                 flag = false;
             }
         }
-        if(flag) cout<<"Booking history not available"<<endl;
+        if(flag) cout<<"No slot is booked"<<endl;
     }
 };
  
@@ -158,11 +158,12 @@ int main(){
         cin>>ans;
         if(to_upper(ans) == "YES"){
             Student_Booking_history obj;
-            // if(to_upper(sport) == "GYM" && to_upper(slot_type) == "MONTHLY")
-            obj.display_history(rollno, gym.monthly_slots, gym.monthly_slots.size());
-            // else if(to_upper(sport) == "GYM" && slot_type == "half-yearly") 
+            cout<<"Booking History:"<<endl;
+            cout<<"Gym:"<<endl<<"Monthly slots booked:"<<endl;
+            obj.display_history(rollno, gym.monthly_slots, gym.monthly_slots.size()); 
+            cout<<"Half-yearly slots booked:"<<endl;
             obj.display_history(rollno, gym.halfyearly_slots, gym.halfyearly_slots.size());
-            // else if(to_upper(sport) == "BADMINTON") 
+            cout<<"Badminton slots booked:"<<endl;
             obj.display_history(rollno, badminton.slots, badminton.slots.size());
             temp = rollno;
         }
