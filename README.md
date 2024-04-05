@@ -20,9 +20,16 @@ It then displays all the available slots with there respective slot number for t
 ![WhatsApp Image 2024-04-05 at 21 56 02_28d92e80](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/7143ccb0-3c11-484a-aa6b-03543765dd77)
 
 Then it asks whether the user wants to check booking history.<br>
+Entering Yes shows the booking history separetely for gym and badminton.<br>
+Here we are done with a single booking.
 
 ![WhatsApp Image 2024-04-05 at 19 30 12_c878c7cf](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/7f20630b-4c7f-489e-a696-67290eee3ee0)
 
+Now, trying to book the same slot by same or another student will not be permitted. For example here a student tried to book slot 3 of badminton which was already booked by the previous student so it shows that the slot has been already booked. And also the slot disappears from the available slots list once the booking has been made.
+
 ![WhatsApp Image 2024-04-05 at 19 49 13_24a56f39](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/dff69a89-e6af-49e7-9a1a-18a473f370d1)
+
+Booking Gym has slighty different rules since, 3 students can book the same slot at a time as more space is available for gym whereas for badminton it is assumed that only a single badminton court is present(for the sake of simplicity) hence, booking rules for gym have been provided to the student if the student tries to book a gym slot.
+
 
 
