@@ -9,3 +9,6 @@ It then asks to choose the facility i.e, gym or badminton
 
 ![WhatsApp Image 2024-04-05 at 19 27 05_abc9f502](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/67547a38-1568-4cd3-812d-0e07d761a73b)
 
+![WhatsApp Image 2024-04-05 at 19 30 12_c878c7cf](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/7f20630b-4c7f-489e-a696-67290eee3ee0)
+
+
