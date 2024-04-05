@@ -101,7 +101,7 @@ int main(){
         cout<<"Enter your roll number:"<<endl;
         cin>>rollno;
         string sport;
-        cout<<"Select the sport facility:"<<endl<<"Gym"<<"  "<<"Badminton"<<"   "<<"None(For Check booking history)"<<endl;
+        cout<<"Select the sport facility:"<<endl<<"Gym"<<"  "<<"Badminton"<<"   "<<"None(Check booking history)"<<endl;
         cin>>sport;
         int slot_number;
         string slot_type;
@@ -167,7 +167,7 @@ int main(){
             obj.display_history(rollno, badminton.slots, badminton.slots.size());
             temp = rollno;
         }
-        cout<<"Do you want to book another slot for same or different student(Yes/No)"<<endl;
+        cout<<"Do you want to book another slot (for same or different student)(Yes/No)"<<endl;
         cin>>ans;
         if(to_upper(ans) == "NO") break;
     }
