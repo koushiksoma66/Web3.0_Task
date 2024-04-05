@@ -5,9 +5,15 @@ If the user inputs any non-integer it asks for vaid integer input again.<br>
 
 ![WhatsApp Image 2024-04-05 at 19 06 35_c34e193e](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/8e654789-9b03-47bf-9643-4b4d0074fd93)
 
-It then asks to choose the facility the user wants to book i.e, gym or badminton and if the user is here only for checking booking history then "none" or anything other than gym and badminton can be entered
+It then asks to choose the facility the user wants to book i.e, gym or badminton and if the user is here only for checking booking history then "none" or anything other than gym and badminton can be entered for example I randomly entered "check" here<br>
+
+![WhatsApp Image 2024-04-05 at 21 42 23_b8cf4469](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/3d56eef4-a18f-4d4f-8d21-45fda692606c)
+
+It's possible for the user to input any upper or lower case by mistake especially in the letter. This code ensures the input to be case in-sensitive. For example here the user entered "badmiNton" and the code still properly runs
 
 ![WhatsApp Image 2024-04-05 at 19 27 05_abc9f502](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/67547a38-1568-4cd3-812d-0e07d761a73b)
+
+It then displays all the available slots with there respective slot number for the sport chosen
 
 ![WhatsApp Image 2024-04-05 at 19 30 12_c878c7cf](https://github.com/koushiksoma66/Web3.0_Task/assets/166048906/7f20630b-4c7f-489e-a696-67290eee3ee0)
 
